@@ -32,7 +32,7 @@ jobs:
         port: ${{ secrets.SERVER_PORT }}
         envs: GITHUB_USERNAME, GITHUB_TOKEN
         script: |
-          docker stop $(docker ps -a -q)
+          docker stop portfolio
           docker login docker.pkg.github.com -u $GITHUB_USERNAME -p $GITHUB_TOKEN
           docker pull docker.pkg.github.com/nicolasmontoya/portafolio-v2/portfolio:latest
           docker run -dit --name portfolio --network proxy_portfolio docker.pkg.github.com/nicolasmontoya/portafolio-v2/portfolio:latest
