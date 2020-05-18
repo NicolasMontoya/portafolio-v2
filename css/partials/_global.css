@@ -3,7 +3,8 @@
 /* Global Classes */ 
 
 .title-text{
-    font: normal bold 50px/ 72px var(--roboto);
+    font-family: var(--montserrat);
+    color: white;
 }
 
 .text-uppercase{
@@ -14,35 +15,26 @@
 
 .button{
     padding: .8rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font-family: var(--montserrat) !important;
+    font-weight: 700;
+    font-size: 1.4rem;
     position: relative;
-    border: 3px solid transparent;
-    border-radius: 4px;
+
 }
 
 .button.primary-button{
-    background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
-    transition: background .6s ease;
+    border-bottom: 3px solid white;
+    transition: border .3s ease;
     box-shadow: var(--box-shadow);
 }
 
 .button.primary-button:hover{
-    background: whitesmoke;
-    background-clip: padding-box;
-    color: black;
+    color: var(--primary-color);
+    border-bottom: 6px solid var(--primary-color);
 }
 
-.button.primary-button::after, .button.secondary-button::after{
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px;  right: -2px;
-    background: var(--gradient-color);
-    content: ' ';
-    z-index: -1;
-    border-radius: 4px;
-}
 
 .button.secondary-button{
     background: white;
@@ -50,19 +42,15 @@
     transition: background .6s ease;
 }
 
-.button.secondary-button:hover{
-    background: var(--gradient-color);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
-}
+
 
 p.para{
     color: var(--text-color);
-    font: normal 500 16px/ 25px var(--roboto);
+    font: normal 500 16px/ 25px var(--montserrat);
 }
 
 .font-roboto{
-    font-family: var(--roboto);
+    font-family: var(--montserrat);
 }
 
 button:focus,
@@ -75,17 +63,5 @@ button:hover
 }
 
 .title-h1{
-    font: normal bold 39px/ 40px var(--roboto);
-}
-
-
-.navbar_fixed{
-    position: fixed;
-    width: 100%;
-    top: -1px;
-    left: 0; right: 0;
-    background: #ffffff;
-    box-shadow: var(--box-shadow);
-    z-index: 999;
-    transition: background 1s ease;
+    font: normal bold 39px/ 40px var(--montserrat);
 }

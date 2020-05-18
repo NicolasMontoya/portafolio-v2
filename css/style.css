@@ -14,6 +14,10 @@
 
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
+    font-family: var(--parisienne);
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
 }
 
 .header_area .main-menu .navbar{
@@ -21,8 +25,9 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
-    text-transform: uppercase;
+    font: normal 500 15px/2px var(--montserrat);
+    font-weight: 800;
+    font-size: 20px;
     padding: 1.7rem;
     color: var(--title-color);
 }
@@ -46,30 +51,28 @@
 
 /* Banner Area */ 
 
-.site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+
+.navbar-toggler{
+    color: white !important;
 }
 
-.site-main .site-banner .site-title h3{
-    padding-top: 35%;
-    font-weight: 500;
-}
-
-.site-main .site-banner .site-title h3::after{
-    content: " ";
-    height: 2px;
-    width: 18vw;
-    background: black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+.site-main .site-banner .container.custom-container {
+    padding: 0 50px;
 }
 
 .site-main .site-banner .site-title h1{
-    font-size: 5rem;
+    padding-top: 10%;
+    font-weight: 800;
+}
+
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
 }
 
 .site-main .site-banner .site-title h4{
+    font-family: var(--montserrat);
+    font-weight: 400;
     font-size: 1.5rem;
 }
 
@@ -78,11 +81,24 @@
     width: 90rem;
 }
 
+.site-main .site-banner .site-title .site-buttons{
+    margin-top: 5rem;
+}
 
 
 /* End Banner Area */ 
 
 /* Start About Area */ 
+
+.sevices-img {
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#about {
+    background: rgb(27, 27, 27);
+}
 
 .site-main .about-area{
     padding: 8rem 5rem;
@@ -90,12 +106,24 @@
 
 .site-main .about-area .about-title h2 > span{
     display: block;
-    font: normal bold 49px/ 60px var(--roboto);
-    letter-spacing: 21px;
+    font-family: var(--montserrat);
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--primary-color);
 }
 
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
+}
+
+.site-main .about-area .about-image > img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 50%;
 }
 
 /* End About Area */ 
@@ -105,37 +133,40 @@
 
 .site-main .brand-area{
     padding: 1rem 20rem;
-    margin-bottom: 4rem;
 }
 
-.site-main .brand-area .first-row .col-lg-4{
+.site-main .brand-area .first-row .col-lg-6{
     display: flex;
     justify-content: center;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+.site-main .brand-area .first-row .col-lg-6 > .single-brand{
     border: 1px solid var(--border-color);
     text-align: center;
     padding: 1.8rem 0rem;
     margin: .9rem 0;
-    width: 180px;
-    height: 100px;
+    width: 100%;
     cursor: pointer;
     transition: transform .4s ease;
+    background: white;
+    border-radius: 10px;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
-    width: 50%;
+.site-main .brand-area .first-row .col-lg-6 > .single-brand  > img{
+    width: 20%;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+.site-main .brand-area .first-row .col-lg-6 > .single-brand > .card-title{
+    font-family: var(--montserrat);
+    font-weight: 800;
+    text-align: start;
+}
+
+.site-main .brand-area .first-row .col-lg-6 > .single-brand:hover{
     box-shadow: var(--box-shadow);
     transform: scale(1.1);
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
-    filter: brightness(0.15);
-}
 
 .site-main .brand-area .experience-area{
     padding-left: 1rem;
@@ -146,7 +177,6 @@
 }
 
 .site-main .brand-area .experience-area .years-area{
-    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
     padding: 2rem 0;
     width: 40rem;
     height: 18rem;
@@ -165,13 +195,14 @@
 }
 
 .site-main .brand-area .experience-area .years-area .years{
-    font: normal bold 84px/40px var(--roboto);
-    color: var(--primary-color2);
+    font: normal bold 84px/40px var(--montserrat);
+    color: var(--primary-color);
     z-index: 2;
 }
 
 .site-main .brand-area .experience-area .years-area h2 > span{
-    font: normal 600 22px/30px var(--roboto);
+    font: normal 600 22px/30px var(--montserrat);
+    color:white;
 }
 
 .site-main .brand-area .experience-area .call-area{
@@ -179,6 +210,11 @@
 }
 
 /* End Brand Area */ 
+
+.font-logo {
+    font-family: var(--parisienne);
+    font-size: 30px;
+}
 
 /* Services Area */ 
 
@@ -190,9 +226,6 @@
     padding: 0 14rem;
 }
 
-.site-main .services-area .services-title h1{
-    font-size: 35px;
-}
 
 .site-main > .services-area .services{
     background: rgba(248, 252, 253, 0.973);
@@ -220,7 +253,7 @@
 .site-main .project-area .button-group button{
     background: transparent;
     border: none;
-    font: normal 500 16px/130px var(--roboto);
+    font: normal 500 16px/130px var(--montserrat);
     text-transform: uppercase;
 }
 
@@ -229,7 +262,7 @@
 }
 
 .site-main .project-area .grid .our-project > .title h4{
-    font: normal 700 25px/12px var(--roboto);
+    font: normal 700 25px/12px var(--montserrat);
 }
 
 .site-main .project-area .grid .our-project .img a:hover img{
@@ -261,7 +294,7 @@
 }
 
 .site-main .about-area .client .about-client h4{
-    font: normal 500 21px/ 20px var(--roboto);
+    font: normal 500 21px/ 20px var(--montserrat);
 }
 
 .site-main .about-area .client .about-client p{
@@ -287,32 +320,33 @@
 /* Subscribe me */ 
 
 .site-main .subscribe-us-area .subscribe{
-    background: url(../img/subscribe-bg.png) no-repeat;
+    background: white;
+    border-radius: 20px;
     padding: 10rem 0;
     margin: 3rem auto;
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/ 30px var(--roboto);
-    color: whitesmoke;
+    font: normal 700 30px/ 30px var(--montserrat);
+    color: black;
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title p{
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     padding: 1rem 4rem;
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input{
     width: 400px;
     padding: 1.5rem 1rem;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(116, 116, 116);
     background: transparent;
-    color: white;
-    font: normal 500 17px/20px var(--roboto);
+    color: rgb(143, 143, 143);
+    font: normal 500 17px/20px var(--montserrat);
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
-    color: whitesmoke;
+    color: rgb(7, 7, 7);
 }
 
 .site-main .subscribe-us-area .subscribe form .btn-submit button{
@@ -331,18 +365,31 @@ footer.footer-area{
 }
 
 footer.footer-area .social h5{
-    font: normal 500 23px/ 30px var(--roboto);
+    font: normal 500 23px/ 30px var(--montserrat);
 }
 
 footer.footer-area .social a > i{
-    font-size:22px;
+    font-size:40px;
     padding: 2rem;
-    color: var(--border-color);
+    color: black;
 }
 
 footer.footer-area .social a:hover > i{
     color: var(--primary-color);
 }
+
+.title-con {
+    font-family: var(--montserrat);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.content-con {
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 40px;
+}
+
 
 
 /* End Footer */ 
