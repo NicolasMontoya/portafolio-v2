@@ -1,0 +1,42 @@
+name: build
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Publish to Github Packages Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.PACKAGE_PATH }}
+        registry: docker.pkg.github.com
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: DockerFile-prod
+        tags: latest
+    - name: Deploy package to digitalocean
+      uses: appleboy/ssh-action@master
+      env:
+          GITHUB_USERNAME: ${{ secrets.USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_IMAGE: ${{ secrets.IMAGE }}
+          GITHUB_PACKAGE: ${{ secrets.PACKAGE_PATH }}
+          DOCKER_NETWORK: ${{ secrets.NETWORK_DOCKER }}
+          DOCKER_ALIAS: ${{ secrets.DOCKER_ALIAS }}
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        passphrase: ${{ secrets.SERVER_PASSPHRASE }}
+        key: ${{ secrets.SERVER_KEY }}
+        port: ${{ secrets.SERVER_PORT }}
+        envs: GITHUB_USERNAME, GITHUB_TOKEN, GITHUB_PACKAGE, DOCKER_NETWORK, DOCKER_ALIAS
+        script: |
+          docker stop $(docker ps -a -q)
+          docker login docker.pkg.github.com -u $GITHUB_USERNAME -p $GITHUB_TOKEN
+          docker pull docker.pkg.github.com/$GITHUB_PACKAGE:latest
+          docker run -dit --name $DOCKER_ALIAS --network $DOCKER_NETWORK docker.pkg.github.com/$GITHUB_PACKAGE:latest
