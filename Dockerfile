@@ -1,5 +1,4 @@
 # Stage - Production
-FROM nginx:1.17-alpine
-COPY ./src /usr/share/nginx/html
+FROM php:7.2-apache
+COPY ./src /var/www/html/
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]

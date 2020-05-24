@@ -1,306 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portafolio</title>
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Nicolas Montoya - Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="vCard & Resume Template" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+	
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
 
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!--
+		Background Gradient
+	-->
+	<!--<link rel="stylesheet" href="css/gradient.css" />-->
+	
+	<!--
+		Template New-Skin
+	-->
+	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
 
-    <!--  Bootstrap css file  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!--
+		Template RTL
+	-->
+	<!--<link rel="stylesheet" href="css/rtl.css" />-->
+	
+	<!--
+		Template Colors
+	-->
+	<link rel="stylesheet" href="css/template-colors/custom.css" />
+	<!--<link rel="stylesheet" href="css/template-colors/blue.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
 
-    <!--  font awesome icons  -->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<!--
+		Template Dark
+	-->
+	<link rel="stylesheet" href="css/template-dark/dark.css" />
+	
 
-    <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
-
-
-    <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
-
-
-    <!--  custom css file  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!--  Responsive css file  -->
-    <link rel="stylesheet" href="./css/responsive.css">
-
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	
 </head>
 
 <body>
+	<div class="page new-skin">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background"></div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">About</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li>
+						<li style="display: none;">
+							<a href="#works-card">
+								<span class="icon ion-paintbrush"></span>
+								<span class="link">Works</span>
+							</a>
+						</li>
+						<li style="display: none;">
+							<a href="#blog-card">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-at"></span>
+								<span class="link">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(images/bg.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="images/profile.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Nicolas Montoya</div>
+					<div class="subtitle">Web / Mobile Developer & Electronic Engineer</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://twitter.com/nicolasdxd"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/nicolasmontoya"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="https://sourcerer.io/nicolasmontoya"><i class="fas fa-user"></i></a>
+						<a target="_blank" href="https://medium.com/@edward.nmontoya"><span class="fab fa-medium"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="cv.pdf" download="cv.pdf" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 
+				Card - About
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+
+					<!-- 
+						About 
+					-->
+					<div class="content about">
+
+						<!-- title -->
+						<div class="title">About Me</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										Hello! I am a full stack developer with a passion for learning and teaching new technologies.
+										I regularly provide business consulting
+										services. If you have an interesting project, are looking for tutoring or need a consultant,
+										I would love to hear from you.
+									</p>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Age . . . . .</strong> 24</li>
+										<li><strong>Residence . . . . .</strong> Colombia</li>
+										<li><strong>Cellphone . . . . .</strong> +57 3226136272</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Services
+					-->
+					<div class="content services">
+
+						<!-- title -->
+						<div class="title">My Services</div>
+
+						<!-- content -->
+						<div class="row service-items border-line-v">
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-code"></span></div>
+									<div class="name">Web Development</div>
+									<p>
+										Modern and mobile-ready web applications with the lastest
+										technology in backend and frontend. 
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-android-phone-portrait"></span></div>
+									<div class="name">Mobile Development</div>
+									<p>
+										Modern Android and iOS applications to tackle your business
+										requirements and necessities.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-monitor"></span></div>
+									<div class="name">Server administrator</div>
+									<p>
+										Linux and Windows server administration services.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><i class="fab fa-docker"></i></span></div>
+									<div class="name">Docker container administration</div>
+									<p>
+										Migration and maintain services for dockerizing applications
+									</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
 
 
-    <!--  ======================= Start Header Area ============================== -->
+					<!--
+						Fun Fact
+					-->
+					<div class="content fuct">
 
-    <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                <a class="navbar-brand" href="#">N.</a>
-                <button style="color: white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span  class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">inicio<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+						<!-- title -->
+						<div class="title">Fun Fact</div>
 
-    <!--  ======================= End Header Area ============================== -->
+						<!-- content -->
+						<div class="row fuct-items">
 
-    <!--  ======================= Start Main Area ================================ -->
-    <main class="site-main">
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
+									<div class="name">80+ games passed</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-trophy"></span></div>
+									<div class="name">The best grades in schooll</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-coffee"></span></div>
+									<div class="name">1 000+ Cups of coffee</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-flag"></span></div>
+									<div class="name">4 Countries Visited</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Resume
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Resume</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-briefcase"></i></div>
+									<div class="name">Experience</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">2019 - Present</div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">University of Antioquia</div>
+										<p>
+											Develop SQL, Spring Boot and Angular applications for several projects.
+										</p>
+									</div>
+									<div class="resume-item border-line-h active">
+										<div class="date">2018 - Present</div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">DRAI</div>
+										<p>
+											Integrate and develop Spring Boot and Angular applications.
+										</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">2009 - 2010</div>
+										<div class="name">Auxiliar Developer</div>
+										<div class="company">Abc Inc.</div>
+										<p>
+											Migrate Java EE, PHP and JavaScript applications
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- education -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-university"></i></div>
+									<div class="name">Education</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2013 - 2020</div>
+										<div class="name">University of Antioquia</div>
+										<div class="company">Medellín</div>
+										<p>
+											Electronic engineering University of Antioquia, Medellín, Colombia
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">July 2019</div>
+										<div class="name">Mongo DB University</div>
+										<div class="company">Medellín</div>
+										<p>
+											WorkShop DesignThinking and UX
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">July 2018</div>
+										<div class="name">Mongo University</div>
+										<div class="company">Online</div>
+										<p>
+											M101P: MongoDB for Developers
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Skills
+					-->
+					<div class="content skills">
+
+						<!-- title -->
+						<div class="title">My Skills</div>
+					
+						<!-- content -->
+						<div class="row">
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list circles">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-code"></i></div>
+										<div class="name">Coding</div>
+									</div>
+									<ul>
+										<li> 
+											<div class="name">Spring Boot & Java EE</div>
+											<div class="progress p90">
+												<span>90%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">PHP / MYSQL</div>
+											<div class="progress p75">
+												<span>70%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">Angular / JavaScript</div>
+											<div class="progress p85">
+												<span>70%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">HTML / CSS</div>
+											<div class="progress p95">
+												<span>60%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">Oracle SQL</div>
+											<div class="progress p95">
+												<span>70%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">Mongo DB</div>
+											<div class="progress p95">
+												<span>60%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-android-list"></i></div>
+										<div class="name">Knowledge</div>
+									</div>
+									<ul>
+										<li> 
+											<div class="name">Website hosting</div>
+										</li>
+										<li> 
+											<div class="name">iOS and android apps</div>
+										</li>
+										<li> 
+											<div class="name">Server administration</div>
+										</li>
+										<li> 
+											<div class="name">Dockering applications</div>
+										</li>
+										<li> 
+											<div class="name">Modern and mobile-ready</div>
+										</li>
+										<li> 
+											<div class="name">Database develop</div>
+										</li>
+										<li> 
+											<div class="name">Arduino integration</div>
+										</li>
+										<li> 
+											<div class="name">Microchip programming</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-easel"></i></div>
+										<div class="name">Extras</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">Agile methodologies (SCRUM, KANBAN)</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Architecture design</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Micro-Services</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Adobe Sign Experience</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list dotted">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-flag"></i></div>
+										<div class="name">Languages</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">Spanish</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">English</div>
+											<div class="progress">
+												<div class="percentage" style="width:70%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
 
 
-        <!--  ======================= Start Banner Area =======================  -->
-        <section class="site-banner">
-            <div class="custom-container container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
-                        <h1 class="title-text">Nicolas Montoya</h1>
-                        <h4 class="title-text">Desarrollador e ingeniero electrónico, apasionado por la tecnología.</h4>
+							
+							<div class="clear"></div>
+						</div>
+						
+					</div>
 
-                    </div>
-                    <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/banner/cat.jpg" alt="banner-img" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  ======================= End Banner Area =======================  -->
+				</div>
+			</div>
 
-        <!--  ========================= About Area ==========================  -->
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
 
-        <section id="about" class="about-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="./img/cv.png" alt="About us" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 about-title">
-                        <h2 class="text-uppercase pt-5">
-                            <span>Sobre mi</span>
-                        </h2>
-                        <div class="paragraph py-4 w-75">
-                            <p class="para">
-                                Soy estudiante de ingeniería electrónica de noveno semestre con competencias en control, instrumentación y automatización de procesos industriales. Tengo amplia experiencia y pasión por el desarrollo de software, desde que tengo memoria he escrito código y con el paso de los años he pasado por una variedad de tecnologías como C, C++, Python, Javascript, entre otras. Soy una persona apasionada, responsable, con alta disposición a aprender e investigar.
-                            </p>
-                        </div>
-                        <button type="button" class="btn button primary-button text-uppercase">Descargar hoja de vida</button>
-                    </div>
-                </div>
-            </div>
-            <div class="brand-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-12 col-md-12">
-                            <div class="first-row row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="single-brand row">
-                                        <img class="col-lg-4 align-self-center" src="./img/brands/logo-udea.png" alt="Brand-1 ">
-                                        <div class="col-lg-8 card-title align-self-center">
-                                            Universidad de Antioquia
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="single-brand row">
-                                        <img class="col-lg-4 align-self-center" src="./img/brands/drai.png" alt="Brand-1 ">
-                                        <div class="col-lg-8 card-title align-self-center">
-                                            Facultad de ingenieria Universidad de Antioquia
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-12 col-md-12">
-                            <div class="experience-area">
-                                <div class="d-flex flex-row years-area">
-                                    <h2 class="p-3 years">5</h2>
-                                    <h2>
-                                        <span>Años</span>
-                                        <span>de experiencia</span>
-                                        <span>en la industria</span>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+					<!--
+						Works
+					-->
+					<div class="content works">
 
-        <!--  ========================= End About Area ==========================  -->
+						<!-- title -->
+						<div class="title">Recent Works</div>
 
-        <!--  ======================== Brand Area ==============================  -->
+						<!-- filters -->
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="video" />Video</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="music" />Music</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="design" />Design</label>
+							</div>
+						</div>
 
+						<!-- content -->
+						<div class="row grid-items border-line-v">
 
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work1.jpg" class="has-popup-image">
+											<img src="images/works/work1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work1.jpg" class="name has-popup-image">Motorcycle Helmet</a>
+										<div class="category">Photo</div>
+									</div>
+								</div>
+							</div>
 
-        <!--  ======================== End Brand Area ==============================  -->
+							<!-- work item video -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://vimeo.com/97102654" class="has-popup-video">
+											<img src="images/works/work2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-videocamera"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="https://vimeo.com/97102654" class="name has-popup-video">Minimalism Shapes</a>
+										<div class="category">Video</div>
+									</div>
+								</div>
+							</div>
 
-        <!--  ====================== Start Services Area =============================  -->
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+											<img src="images/works/work3.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-music-note"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Staircase</a>
+										<div class="category">Music</div>
+									</div>
+								</div>
+							</div>
 
-        <section class="services-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">¿Por qué yo?</h1>
-                    </div>
-                </div>
-                <div class="container services-list">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/api.svg" alt="Services-1">
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-title text-uppercase font-roboto">Desarrollo de software web y móvil</h5>
-                                    <p class="card-text text-secondary">
-                                        Tengo experiencia en el trabajo con metologías agiles como SCRUM y kanban.
-                                        También manejo frameworks de última generación para frontend (Angular y React) y backend (Express, Spring Boot y Laravel).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/database.svg" alt="Services-2">
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-title text-uppercase font-roboto">Desarrollo en bases de datos SQL y NoSQL</h5>
-                                    <p class="card-text text-secondary">
-                                        Tengo amplia experencia en el desarrollado de aplicaciones SQL en bases de datos empresariales como Oracle y Postgres.
-                                        Tambien he desarrollado en bases de datos no relacionales como MongoDB
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/share.svg" alt="Services-3">
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-title text-uppercase font-roboto">Arquitectura de proyectos</h5>
-                                    <p class="card-text text-secondary">
-                                        Tengo la experiencia de liderar proyectos de software. Puedo diseñar integraciones
-                                        con cluster de Kubernetes, ambientes dockerizados y servidores Java EE. Mi especializadad
-                                        es el control de calidad y las buenas practicas de software.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/responsive.svg" alt="Services-4">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-uppercase font-roboto">Desarrollo de aplicaciones moviles</h5>
-                                    <p class="card-text text-secondary">
-                                        Tengo amplia experiencia en el desarrollo de aplicaciones móviles enfocadas a ámbientes académicos <mat-slider tickInterval="auto"></mat-slider>
-                                        tanto para Android como iOS. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-1" class="has-popup-media">
+											<img src="images/works/work4.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-1" class="name has-popup-media">Mobile Application</a>
+										<div class="category">Design</div>
+									</div>
+									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/work4.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Mobile Application</h1>						
+													<div class="blog-detail">Design</div>
+													<div class="blog-content">
+														<p>
+															So striking at of to welcomed resolved. Northward by described up household therefore 
+															attention. Excellence decisively nay man yet impression for contrasted remarkably.
+														</p>
+														<p>
+															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
+															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
+															determine few her two cordially admitting old.
+														</p>
+														<blockquote>
+															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+															Curae; Pellentesque suscipit.
+														</blockquote>
+														<p>
+															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
+															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
+															Increasing sufficient everything men him admiration unpleasing sex.
+														</p>
+														<ul class="list-style">
+															<li>Greatest properly off ham exercise all.</li>
+															<li>Unsatiable invitation its possession nor off.</li>
+															<li>All difficulty estimating unreserved increasing the solicitude.</li>
+														</ul>
+														<p>
+															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
+															up civil do an offer wound of.
+														</p>
+													</div>
+													<a href="#" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-        <!--  ====================== End Services Area =============================  -->
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work5.jpg" class="has-popup-image">
+											<img src="images/works/work5.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work5.jpg" class="name has-popup-image">Gereal Travels</a>
+										<div class="category">Photo</div>
+									</div>
+								</div>
+							</div>
 
- 
-        <!--  ========================== Subscribe me Area ============================  -->
-        <section class="subscribe-us-area">
-            <div class="container subscribe">
-                <div class="row">
-                    <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Datos de contacto</h4>
-                        <p class="para">Si necesitas una asesoría o estas interesado en contrarme no dudes en llamarme.</p>
-                    </div>
-                </div>
-                <div class="justify-content-center">
-                        <div class="col align-items-center text-center" >
-                            <div class="col">
-                                <div class="title-con">Telefono</div>
-                                <div class="content-con"> +57 322-613-6372</div>
-                            </div>
-                            <div class="col">
-                                <div class="title-con">Email</div>
-                                <div class="content-con">edward.nmontoya@gmail.com</div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <!--  ========================== End Subscribe me Area ============================  -->
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+											<img src="images/works/work8.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-music-note"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Daylight Entrance</a>
+										<div class="category">Music</div>
+									</div>
+								</div>
+							</div>
 
+							<!-- work item video -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://vimeo.com/97102654" class="has-popup-video">
+											<img src="images/works/work6.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-videocamera"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="https://vimeo.com/97102654" class="name has-popup-video">Architecture</a>
+										<div class="category">Video</div>
+									</div>
+								</div>
+							</div>
 
-    </main>
-    <!--  ======================= End Main Area ================================ -->
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-2" class="has-popup-media">
+											<img src="images/works/work7.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-2" class="name has-popup-media">Social Website</a>
+										<div class="category">Design</div>
+									</div>
+									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/work7.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Mobile Application</h1>						
+													<div class="blog-detail">Design</div>
+													<div class="blog-content">
+														<p>
+															So striking at of to welcomed resolved. Northward by described up household therefore 
+															attention. Excellence decisively nay man yet impression for contrasted remarkably.
+														</p>
+														<p>
+															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
+															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
+															determine few her two cordially admitting old.
+														</p>
+														<blockquote>
+															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+															Curae; Pellentesque suscipit.
+														</blockquote>
+														<p>
+															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
+															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
+															Increasing sufficient everything men him admiration unpleasing sex.
+														</p>
+														<ul class="list-style">
+															<li>Greatest properly off ham exercise all.</li>
+															<li>Unsatiable invitation its possession nor off.</li>
+															<li>All difficulty estimating unreserved increasing the solicitude.</li>
+														</ul>
+														<p>
+															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
+															up civil do an offer wound of.
+														</p>
+													</div>
+													<a href="#" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-    <footer id="contact" class="footer-area">
-        <div class="container">
-            <div>
-                <div class="site-logo text-center py-4">
-                    <a href="#" class="font-logo">N.</a>
-                </div>
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Sigueme</h5>
-                    <a target="blank" href="https://linkedin.com/in/nicolas-montoya"><i class="fab fa-linkedin"></i></a>
-                    <a target="blank" href="https://github.com/nicolasmontoya"><i class="fab fa-github"></i></a>
-                    <a target="blank" href="https://nicolasmontoya.com"><i class="fas fa-address-card"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+							<div class="clear"></div>
+						</div>
 
+					</div>
 
-    <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
+				</div>
+			</div>
 
-    <!--  Bootstrap js file  -->
-    <script src="./js/bootstrap.min.js"></script>
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog" id="blog-card">
+				<div class="card-wrap">
 
-    <!--  isotope js library  -->
-    <script src="./vendor/isotope/isotope.min.js"></script>
+					<!--
+						Blog
+					-->
+					<div class="content blog">
 
-    <!--  Magnific popup script file  -->
-    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+						<!-- title -->
+						<div class="title">Latest Posts</div>
 
-    <!--  Owl-carousel js file  -->
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+						<!-- content -->
+						<div class="row border-line-v">
 
-    <!--  custom js file  -->
-    <script src="./js/main.js"></script>
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-new-dark.html">
+											<img src="images/blog/blog1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-new-dark.html" class="name">By spite about do of do allow blush</a>
+										<div class="category">Design</div>
+									</div>
+								</div>
+							</div>
 
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-new-dark.html">
+											<img src="images/blog/blog2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>19</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-new-dark.html" class="name">Two Before Arrow Not Relied</a>
+										<div class="category">Coding</div>
+									</div>
+								</div>
+							</div>
 
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-new-dark.html">
+											<img src="images/blog/blog3.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-new-dark.html" class="name">By spite about do of do allow blush</a>
+										<div class="category">Travel</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Contacts
+			-->
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+
+					<!--
+						Conacts Info
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Get in Touch</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Address . . . . .</strong> Antioquia, Colombia</li>
+										<li><strong>Email . . . . .</strong> edward.nmontoya@gmail.com</li>
+										<li><strong>Phone . . . . .</strong> +57 3226136372</li>
+										<li><strong>Freelance . . . . .</strong> Available</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Contact Form
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Contact Form</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="contact_form">
+									<form id="cform" method="post">
+										<div class="row">
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="name" placeholder="Full Name" />
+												</div>
+											</div>
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="email" placeholder="Email Address" />
+												</div>
+											</div>
+											<div class="col col-d-12 col-t-12 col-m-12">
+												<div class="group-val">
+													<textarea name="message" placeholder="Your Message"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="align-left">
+											<a href="#" class="button" onclick="$('#cform').submit(); return false;">
+												<span class="text">Send Message</span>
+												<span class="arrow"></span>
+											</a>
+										</div>
+									</form>
+									<div class="alert-success">
+										<p>Thanks, your message is sent successfully.</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
+	
 </body>
-
 </html>
